@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+
+		<!-- Branding -->
+		<AssemblyName>NetIsolatePlus</AssemblyName>
+		<RootNamespace>NetIsolatePlus</RootNamespace>
+		<Company>Tensioncore Administration Services</Company>
+		<Product>NetIsolate+</Product>
+		<Description>1-click network adapter isolation, instant toggles and status windows.</Description>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0.0</FileVersion>
+		<Copyright>Tensioncore Administration Services 2026</Copyright>
+
+		<!-- Optional: set once you add the icon file -->
+		<ApplicationIcon>Assets\NetIsolatePlus.ico</ApplicationIcon>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<SelfContained>true</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+
+		<!-- Bundle native WPF libs inside the single-file and extract at runtime -->
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+
+		<!-- Smaller EXE (slightly slower first launch when it unpacks) -->
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+		<!-- No PDBs -->
+		<DebugType>none</DebugType>
+
+		<!-- Small extra win if you don't need non-US/global collation rules -->
+		<InvariantGlobalization>false</InvariantGlobalization>
+
+		<!-- Keep this off; it increases size -->
+		<PublishReadyToRun>false</PublishReadyToRun>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\logo.png" />
+	  <None Remove="Assets\NetIsolatePlus.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Management" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Assets\logo.png" />
+	  <Resource Include="Assets\NetIsolatePlus.ico" />
+	</ItemGroup>
+</Project>
