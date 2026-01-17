@@ -29,10 +29,10 @@ Signed release builds are available here:
 - Admin rights to perform adapter enable/disable actions
 
 ## Build from source
-See: [build_readme.md]
+See: [build_readme.md](build_readme.md)
 
 ## Changelog
-See: [CHANGELOG.md]
+See: [CHANGELOG.md](CHANGELOG.md)
 
 ## License
 Licensed under the **Apache License 2.0** — see `LICENSE`.
