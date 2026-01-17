@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/netisolateplusv1.jpg" alt="NetIsolate+ screenshot" width="600" />
+  <img src="netisolateplusv1.jpg" alt="NetIsolate+ screenshot" width="600" />
 </p>
 
 # NetIsolate+
