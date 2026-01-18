@@ -8,7 +8,7 @@ Fast Network adapter isolation, instant toggles, and one-click Status/Properties
 
 ## Download (signed build)
 Signed release builds are available here:
-- https://www.nickdodd.com/systems.php
+- [https://www.nickdodd.com/downloads/netisolate](https://www.nickdodd.com/downloads/netisolate)
 
 ## What it does
 - Toggle all network adapters **ON/OFF**
