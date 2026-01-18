@@ -7,7 +7,7 @@
 Fast Network adapter isolation, instant toggles, and one-click Status/Properties — built for power users and home labs.
 
 ## Download (signed build)
-Signed release builds are available here:
+Signed release build is available here:
 - [https://www.nickdodd.com/downloads/netisolate](https://www.nickdodd.com/downloads/netisolate)
 
 ## What it does
